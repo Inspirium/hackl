@@ -1,0 +1,123 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+//
+// Color system
+//
+
+// stylelint-disable
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529; 
+$black: #000;
+
+$gray-light: #AEB2BE;
+$gray-lighter: #EAEFF3;
+$gray-darker: #798093;
+$gray: #464a4c; //TODO: maybe refactor use one of the grays
+$gray-lightest: #f7f7f9;
+
+$blue: #0085B2;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #FF4000;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #85B200;
+$teal: #20c997;
+$cyan: #17a2b8;
+$clay: #B25900;
+$concrete: #0085B2;
+
+$colors: ();
+$colors: map-merge((
+        "blue": $blue,
+        "indigo": $indigo,
+        "purple": $purple,
+        "pink": $pink,
+        "red": $red,
+        "orange": $orange,
+        "yellow": $yellow,
+        "green": $green,
+        "teal": $teal,
+        "cyan": $cyan,
+        "white": $white,
+        "gray": $gray-600,
+        "gray-dark": $gray-800,
+), $colors);
+
+$primary: $blue;
+$secondary: $gray-600;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+        "primary": $primary,
+        "secondary": $secondary,
+        "success": $success,
+        "info": $gray-light,
+        "warning": $warning,
+        "danger": $danger,
+        "light": $light,
+        "dark": $dark,
+        "clay": $clay,
+        "acrylic": $blue,
+        "artifical-clay":$orange,
+        "artificial-grass":$teal,
+        "asphalt":$gray-800,
+        "carpet":$yellow,
+        "concrete":#0085B2,
+        "grass":$green,
+        "other":$pink
+), $theme-colors);
+// stylelint-enable
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $white;
+$body-color: $gray-900;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: none;
+$link-decoration: none;
+$link-hover-color: none;
+$link-hover-decoration: none;
+
+$border-color: $gray-200;
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-monospace: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base: 'Raleway', sans-serif;
+$font-number: 'Open Sans', sans-serif;
+
+$input-btn-focus-color: rgba(theme-color("primary"), .25);
+
+$btn-border-radius: 0;
+$btn-border-radius-lg: 0;
+$btn-border-radius-sm: 0;
+
+$btn-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+$modal-backdrop-opacity: .9;
+
+$badge-border-radius: 0;

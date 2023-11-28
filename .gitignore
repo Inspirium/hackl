@@ -1,0 +1,16 @@
+/node_modules
+/public/storage
+/storage/*.key
+/vendor
+/.idea
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+.env
+reservation.jpg
+public/images
+public/css
+public/js
+laravel-echo-server.json
+mix-manifest.json
